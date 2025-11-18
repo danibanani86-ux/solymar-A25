@@ -34,9 +34,9 @@
     <p data-i18n="subtitle">Dein Zuhause unter der Sonne Fuerteventuras 🌴☀️</p>
 
     <div class="lang-buttons">
-        <img src="https://flagcdn.com/w40/de.png" alt="de" title="Deutsch">
-        <img src="https://flagcdn.com/w40/gb.png" alt="en" title="English">
-        <img src="https://flagcdn.com/w40/pl.png" alt="pl" title="Polski">
+        <img src="https://flagcdn.com/w40/de.png" onclick="setLang('de')" title="Deutsch" alt="Deutsch">
+        <img src="https://flagcdn.com/w40/gb.png" onclick="setLang('en')" title="English" alt="English">
+        <img src="https://flagcdn.com/w40/pl.png" onclick="setLang('pl')" title="Polski" alt="Polski">
     </div>
 </header>
 
@@ -44,21 +44,35 @@
 
     <section>
         <h2 data-i18n="address_title">📍 Adresse & Anfahrt</h2>
-        <p data-i18n="address_name">Solymar Calma A25</p>
-        <p data-i18n="address_text">SolymarCalma HRE<br>C. Puerto de la Cebada, 1<br>35627 Costa Calma, Las Palmas, Spanien</p>
+        <p><strong>Solymar Calma A25</strong></p>
+        <p data-i18n="address_text">
+            SolymarCalma HRE<br>
+            C. Puerto de la Cebada, 1<br>
+            35627 Costa Calma, Las Palmas, Spanien
+        </p>
         <p><a href="https://www.google.com/maps?q=SolymarCalma+HRE,+C.+Puerto+de+la+Cebada,+1,+35627+Costa+Calma,+Las+Palmas,+Spanien" target="_blank" data-i18n="address_maps">📍 Google Maps öffnen</a></p>
-        <p data-i18n="address_note">Hinweis: Parkplätze sind auf der Straße oder links neben der Anlage verfügbar.<br>Die Einfahrt befindet sich nach dem Kreisverkehr etwas weiter unten.<br>Insgesamt gibt es vier Zugänge zur Anlage – jeweils zwei oben und zwei unten.</p>
+        <p><em data-i18n="address_note">
+            Hinweis: Parkplätze sind auf der Straße oder links neben der Anlage auf dem angrenzenden Feld verfügbar.<br>
+            Die Einfahrt zur Anlage befindet sich nach dem Kreisverkehr etwas weiter unten, erkennbar am abgesenkten Bordstein.<br>
+            Insgesamt gibt es vier Zugänge zur Anlage – jeweils zwei oben und zwei unten.
+        </em></p>
     </section>
 
     <section>
         <h2 data-i18n="wifi_title">📶 WLAN</h2>
-        <p data-i18n="wifi_step1">1. Schritt: Mit WLAN verbinden</p>
-        <p data-i18n="wifi_name">Name: Sonne statt Stream</p>
-        <p data-i18n="wifi_pass">Passwort: 64084459</p>
-        <p data-i18n="wifi_step2">2. Schritt: Login</p>
-        <p data-i18n="wifi_user">Benutzername: A25</p>
-        <p data-i18n="wifi_userpass">Passwort: RELT4ADG71</p>
-        <p data-i18n="wifi_note">Hinweis: Das WLAN ist mit einer 2-Faktor-Authentifizierung gesichert. Zuerst wird das Standardpasswort benötigt, anschließend erfolgt die Anmeldung mit Benutzername und Passwort. Es kann sein, dass man sich nach einiger Zeit erneut anmelden muss.</p>
+        <div><strong data-i18n="wifi_step1">1. Schritt: Mit WLAN verbinden</strong></div>
+        <div><strong data-i18n="wifi_name">Name:</strong> Sonne statt Stream</div>
+        <div><strong data-i18n="wifi_pass">Passwort:</strong> 64084459</div>
+
+        <div style="margin-top:1rem;"></div>
+
+        <div><strong data-i18n="wifi_step2">2. Schritt: Login</strong></div>
+        <div><strong data-i18n="wifi_user">Benutzername:</strong> A25</div>
+        <div><strong data-i18n="wifi_userpass">Passwort:</strong> RELT4ADG71</div>
+        
+        <div style="margin-top:1rem;"><em data-i18n="wifi_note">
+            Hinweis: Das WLAN ist mit einer 2-Faktor-Authentifizierung gesichert. Zuerst wird das Standardpasswort benötigt, anschließend erfolgt die Anmeldung mit Benutzername und Passwort. Es kann sein, dass man sich nach einiger Zeit erneut anmelden muss (Schritt 2).
+        </em></div>
     </section>
 
     <section>
@@ -105,7 +119,7 @@
 
     <section>
         <h2 data-i18n="contact_title">📞 Wichtige Kontakte</h2>
-        <p data-i18n="contact_emergency">Notruf: 112</p>
+        <p><strong data-i18n="contact_emergency">Notruf:</strong> 112</p>
         <p data-i18n="contact_list">091 – Policía Nacional<br>062 – Guardia Civil<br>061 – Medizinische Notfallhilfe</p>
     </section>
 
@@ -121,69 +135,68 @@ const translations = {
         "title": "Willkommen im Solymar Calma A25",
         "subtitle": "Dein Zuhause unter der Sonne Fuerteventuras 🌴☀️",
         "address_title": "📍 Adresse & Anfahrt",
-        "address_name": "Solymar Calma A25",
         "address_text": "SolymarCalma HRE<br>C. Puerto de la Cebada, 1<br>35627 Costa Calma, Las Palmas, Spanien",
         "address_maps": "📍 Google Maps öffnen",
-        "address_note": "Hinweis: Parkplätze sind auf der Straße oder links neben der Anlage verfügbar.<br>Die Einfahrt befindet sich nach dem Kreisverkehr etwas weiter unten.<br>Insgesamt gibt es vier Zugänge zur Anlage – jeweils zwei oben und zwei unten.",
+        "address_note": "Hinweis: Parkplätze sind auf der Straße oder links neben der Anlage verfügbar. Die Einfahrt befindet sich nach dem Kreisverkehr etwas weiter unten.",
         "wifi_title": "📶 WLAN",
         "wifi_step1": "1. Schritt: Mit WLAN verbinden",
-        "wifi_name": "Name: Sonne statt Stream",
-        "wifi_pass": "Passwort: 64084459",
+        "wifi_name": "Name:",
+        "wifi_pass": "Passwort:",
         "wifi_step2": "2. Schritt: Login",
-        "wifi_user": "Benutzername: A25",
-        "wifi_userpass": "Passwort: RELT4ADG71",
-        "wifi_note": "Hinweis: Das WLAN ist mit einer 2-Faktor-Authentifizierung gesichert. Zuerst wird das Standardpasswort benötigt, anschließend erfolgt die Anmeldung mit Benutzername und Passwort. Es kann sein, dass man sich nach einiger Zeit erneut anmelden muss.",
+        "wifi_user": "Benutzername:",
+        "wifi_userpass": "Passwort:",
+        "wifi_note": "Hinweis: Das WLAN ist mit einer 2-Faktor-Authentifizierung gesichert. Zuerst wird das Standardpasswort benötigt, anschließend erfolgt die Anmeldung mit Benutzername und Passwort.",
         "key_title": "🔑 Schlüssel",
         "key_text": "Der Schlüssel wird vor Ankunft übergeben.",
         "trash_title": "🗑️ Mülltrennung",
-        "trash_text": "Im Gang stehen Mülltonnen (alles gemischt).<br>Außengänge: Glas, Plastik und Papier.",
+        "trash_text": "Im Gang stehen Mülltonnen (alles gemischt). Außengänge: Glas, Plastik und Papier.",
         "bugs_title": "🐜 Insekten",
-        "bugs_1": "Um Insektenbefall zu vermeiden, bitte Essen stets verpackt aufbewahren und nicht offen stehen lassen.",
+        "bugs_1": "Um Insektenbefall zu vermeiden, bitte Essen stets verpackt aufbewahren.",
         "bugs_2": "Kakerlaken können nicht zu 100 % ausgeschlossen werden, treten aber nur selten auf.",
-        "bugs_3": "In der Wohnung stehen Bug-Spray und Fallen bereit.",
+        "bugs_3": "Bug-Spray und Fallen sind vorhanden.",
         "pool_title": "🏊 Pool",
-        "pool_text": "Der Pool und die Liegen können genutzt werden. Bitte den Schlüssel immer mitnehmen.",
+        "pool_text": "Der Pool und die Liegen können genutzt werden. Bitte den Schlüssel mitnehmen.",
         "fan_title": "💡 Ventilator & Licht",
-        "fan_text": "Die Deckenventilatoren haben eine eigene Fernbedienung. Wichtig: Der Wandschalter muss auf „an“ stehen, damit Strom fließt.",
+        "fan_text": "Die Deckenventilatoren haben eine Fernbedienung. Der Wandschalter muss auf „an“ stehen.",
         "leave_title": "🧹 Vor Abreise bitte beachten",
         "leave_1": "Am Ende saugen und ggf. durchwischen.",
         "leave_2": "Toilette bitte reinigen.",
         "leave_3": "Bettwäsche abziehen und in den Wäschekorb legen.",
         "leave_4": "Fenster, Balkontüren etc. schließen.",
-        "leave_5": "Den großen Schirm in den Wintergarten stellen (Druckknopf-Arretierung in der Mitte).",
+        "leave_5": "Den großen Schirm in den Wintergarten stellen (Druckknopf-Arretierung in der Mitte)",
         "leave_6": "Alle persönlichen Gegenstände einsammeln.",
         "leave_7": "Elektrische Geräte ausschalten.",
         "contact_title": "📞 Wichtige Kontakte",
-        "contact_emergency": "Notruf: 112",
+        "contact_emergency": "Notruf:",
         "contact_list": "091 – Policía Nacional<br>062 – Guardia Civil<br>061 – Medizinische Notfallhilfe",
         "footer": "Viel Spaß auf Fuerteventura & einen erholsamen Aufenthalt!"
     },
+
     "en": {
         "title": "Welcome to Solymar Calma A25",
         "subtitle": "Your home under the Fuerteventura sun 🌴☀️",
         "address_title": "📍 Address & Directions",
-        "address_name": "Solymar Calma A25",
         "address_text": "SolymarCalma HRE<br>C. Puerto de la Cebada, 1<br>35627 Costa Calma, Las Palmas, Spain",
         "address_maps": "📍 Open Google Maps",
-        "address_note": "Note: Parking is available on the street or next to the complex.<br>The entrance is slightly downhill after the roundabout.<br>There are four entrances to the complex – two at the top and two at the bottom.",
+        "address_note": "Note: Parking is available on the street or next to the complex. The entrance is slightly downhill after the roundabout.",
         "wifi_title": "📶 WiFi",
         "wifi_step1": "1st step: Connect to WiFi",
-        "wifi_name": "Name: Sun instead of Stream",
-        "wifi_pass": "Password: 64084459",
+        "wifi_name": "Name:",
+        "wifi_pass": "Password:",
         "wifi_step2": "2nd step: Login",
-        "wifi_user": "Username: A25",
-        "wifi_userpass": "Password: RELT4ADG71",
-        "wifi_note": "Note: WiFi uses two-factor authentication. First enter the standard password, then login with username and password. You may need to log in again after some time.",
+        "wifi_user": "Username:",
+        "wifi_userpass": "Password:",
+        "wifi_note": "Note: WiFi uses two-factor authentication. First the standard password, then login with username and password.",
         "key_title": "🔑 Key",
         "key_text": "The key will be handed over before arrival.",
         "trash_title": "🗑️ Waste separation",
-        "trash_text": "Inside corridor: mixed waste.<br>Outside: glass, plastic, paper.",
+        "trash_text": "Inside corridor: mixed waste. Outside: glass, plastic, paper.",
         "bugs_title": "🐜 Insects",
         "bugs_1": "Please store food sealed to avoid insects.",
         "bugs_2": "Cockroaches cannot be completely ruled out, but are rare.",
         "bugs_3": "Bug spray and traps are available in the apartment.",
         "pool_title": "🏊 Pool",
-        "pool_text": "The pool and sunbeds may be used. Always bring the key.",
+        "pool_text": "The pool and sunbeds may be used. Please always bring the key.",
         "fan_title": "💡 Fan & Light",
         "fan_text": "The ceiling fans have a remote control. The wall switch must be ON.",
         "leave_title": "🧹 Before departure",
@@ -195,30 +208,30 @@ const translations = {
         "leave_6": "Collect all personal belongings.",
         "leave_7": "Switch off all electrical devices.",
         "contact_title": "📞 Important contacts",
-        "contact_emergency": "Emergency call: 112",
+        "contact_emergency": "Emergency call:",
         "contact_list": "091 – Policía Nacional<br>062 – Guardia Civil<br>061 – Medical emergency",
         "footer": "Enjoy your stay on Fuerteventura!"
     },
+
     "pl": {
         "title": "Witamy w Solymar Calma A25",
         "subtitle": "Twój dom pod słońcem Fuerteventury 🌴☀️",
         "address_title": "📍 Adres i dojazd",
-        "address_name": "Solymar Calma A25",
         "address_text": "SolymarCalma HRE<br>C. Puerto de la Cebada, 1<br>35627 Costa Calma, Las Palmas, Hiszpania",
         "address_maps": "📍 Otwórz Google Maps",
-        "address_note": "Parkowanie możliwe na ulicy lub na polu obok obiektu.<br>Wejście znajduje się nieco niżej za rondem.<br>Są cztery wejścia do obiektu – po dwa u góry i na dole.",
+        "address_note": "Parkowanie możliwe na ulicy lub na polu obok obiektu. Wejście znajduje się nieco niżej za rondem.",
         "wifi_title": "📶 WiFi",
         "wifi_step1": "Krok 1: Połącz się z WiFi",
-        "wifi_name": "Nazwa: Słońce zamiast Stream",
-        "wifi_pass": "Hasło: 64084459",
+        "wifi_name": "Nazwa:",
+        "wifi_pass": "Hasło:",
         "wifi_step2": "Krok 2: Login",
-        "wifi_user": "Nazwa użytkownika: A25",
-        "wifi_userpass": "Hasło: RELT4ADG71",
-        "wifi_note": "Uwaga: WiFi ma podwójną autoryzację — najpierw hasło standardowe, potem login. Może być wymagane ponowne logowanie po pewnym czasie.",
+        "wifi_user": "Nazwa użytkownika:",
+        "wifi_userpass": "Hasło:",
+        "wifi_note": "Uwaga: WiFi ma podwójną autoryzację — najpierw hasło standardowe, potem login.",
         "key_title": "🔑 Klucz",
         "key_text": "Klucz zostanie przekazany przed przyjazdem.",
         "trash_title": "🗑️ Segregacja śmieci",
-        "trash_text": "Korytarz: odpady zmieszane.<br>Zewnętrzne kosze: szkło, plastik, papier.",
+        "trash_text": "Korytarz: odpady zmieszane. Zewnętrzne kosze: szkło, plastik, papier.",
         "bugs_title": "🐜 Owady",
         "bugs_1": "Przechowuj jedzenie szczelnie zamknięte.",
         "bugs_2": "Karaluchy mogą się pojawić, ale rzadko.",
@@ -236,27 +249,31 @@ const translations = {
         "leave_6": "Zabierz swoje rzeczy.",
         "leave_7": "Wyłącz wszystkie urządzenia elektryczne.",
         "contact_title": "📞 Ważne numery",
-        "contact_emergency": "Telefon alarmowy: 112",
+        "contact_emergency": "Telefon alarmowy:",
         "contact_list": "091 – Policja<br>062 – Guardia Civil<br>061 – Pomoc medyczna",
         "footer": "Miłego pobytu na Fuerteventurze!"
     }
 };
 
+// sicherer Setter: greift nicht bei undefined
 function setLang(lang) {
+    const langObj = translations[lang] || {};
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
-        if (translations[lang][key]) el.innerHTML = translations[lang][key];
+        if (langObj[key]) {
+            el.innerHTML = langObj[key];
+        }
+        // falls keine Übersetzung vorhanden: belasse aktuellen Text
     });
 }
-
-// Flaggen-Eventlistener
-document.querySelectorAll(".lang-buttons img").forEach(img => {
-    img.addEventListener("click", () => setLang(img.alt));
-});
-
-// Optional: Standard auf Deutsch setzen
-setLang('de');
 </script>
 
 </body>
 </html>
+
+
+
+
+
+
+

@@ -34,10 +34,10 @@
     <p data-i18n="subtitle">Dein Zuhause unter der Sonne Fuerteventuras 🌴☀️</p>
 
     <div class="lang-buttons">
-        <img src="https://flagcdn.com/w40/de.png" title="Deutsch" alt="de">
-        <img src="https://flagcdn.com/w40/gb.png" title="English" alt="en">
-        <img src="https://flagcdn.com/w40/pl.png" title="Polski" alt="pl">
-    </div>
+    <img src="https://flagcdn.com/w40/de.png" title="Deutsch" alt="de">
+    <img src="https://flagcdn.com/w40/gb.png" title="English" alt="en">
+    <img src="https://flagcdn.com/w40/pl.png" title="Polski" alt="pl">
+</div>
 </header>
 
 <main>
@@ -222,7 +222,7 @@ function setLang(lang) {
 
 document.querySelectorAll('.lang-buttons img').forEach(img => {
     img.addEventListener('click', () => {
-        const lang = img.getAttribute('alt');
+        const lang = img.getAttribute('alt'); // de / en / pl
         setLang(lang);
     });
 });
@@ -230,3 +230,4 @@ document.querySelectorAll('.lang-buttons img').forEach(img => {
 
 </body>
 </html>
+

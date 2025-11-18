@@ -5,19 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Willkommen – Solymar Calma A25</title>
 <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0;
-           background: linear-gradient(to bottom, #fdf6e3, #e0f7fa); color:#333; }
-    header {
-        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Playa_de_Sotavento_2009_01.jpg/1280px-Playa_de_Sotavento_2009_01.jpg') center/cover no-repeat;
-        color:white; text-align:center; padding:3rem 1rem; text-shadow:1px 1px 4px rgba(0,0,0,0.6);
-    }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; background: linear-gradient(to bottom, #fdf6e3, #e0f7fa); color:#333; }
+    header { background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Playa_de_Sotavento_2009_01.jpg/1280px-Playa_de_Sotavento_2009_01.jpg') center/cover no-repeat; color:white; text-align:center; padding:3rem 1rem; text-shadow:1px 1px 4px rgba(0,0,0,0.6); }
     header h1 { font-size:2.5rem; margin:0; }
     header p { font-size:1.2rem; margin-top:0.5rem; }
-
     .lang-buttons { margin-top:1rem; display:flex; justify-content:center; gap:15px; }
     .lang-buttons img { width:40px; height:28px; cursor:pointer; border-radius:5px; border:2px solid white; transition:0.2s; }
     .lang-buttons img:hover { transform:scale(1.15); }
-
     main { padding:1rem; max-width:900px; margin:auto; }
     section { background:white; border-radius:15px; padding:1.5rem; margin-bottom:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
     h2 { color:#ff9800; margin-top:0; }
@@ -32,7 +26,6 @@
 <header>
     <h1 data-i18n="title">Willkommen im Solymar Calma A25</h1>
     <p data-i18n="subtitle">Dein Zuhause unter der Sonne Fuerteventuras 🌴☀️</p>
-
     <div class="lang-buttons">
         <img src="https://flagcdn.com/w40/de.png" onclick="setLang('de')" title="Deutsch" alt="Deutsch">
         <img src="https://flagcdn.com/w40/gb.png" onclick="setLang('en')" title="English" alt="English">
@@ -41,83 +34,72 @@
 </header>
 
 <main>
+    <section>
+        <h2 data-i18n="address_title">📍 Adresse & Anfahrt</h2>
+        <p><strong>Solymar Calma A25</strong></p>
+        <p data-i18n="address_text">SolymarCalma HRE<br>C. Puerto de la Cebada, 1<br>35627 Costa Calma, Las Palmas, Spanien</p>
+        <p><a href="https://www.google.com/maps?q=SolymarCalma+HRE,+C.+Puerto+de+la+Cebada,+1,+35627+Costa+Calma,+Las+Palmas,+Spanien" target="_blank" data-i18n="address_maps">📍 Google Maps öffnen</a></p>
+        <p data-i18n="address_note"><em>Hinweis: Parkplätze sind auf der Straße oder links neben der Anlage verfügbar.<br>Die Einfahrt befindet sich nach dem Kreisverkehr etwas weiter unten.<br>Insgesamt gibt es vier Zugänge zur Anlage – jeweils zwei oben und zwei unten.</em></p>
+    </section>
 
-<section>
-    <h2 data-i18n="address_title">📍 Adresse & Anfahrt</h2>
-    <p><strong>Solymar Calma A25</strong></p>
-    <p data-i18n="address_text">
-        SolymarCalma HRE<br>
-        C. Puerto de la Cebada, 1<br>
-        35627 Costa Calma, Las Palmas, Spanien
-    </p>
-    <p><a href="https://www.google.com/maps?q=SolymarCalma+HRE,+C.+Puerto+de+la+Cebada,+1,+35627+Costa+Calma,+Las+Palmas,+Spanien" target="_blank" data-i18n="address_maps">📍 Google Maps öffnen</a></p>
-    <p data-i18n="address_note"><em>
-        Hinweis: Parkplätze sind auf der Straße oder links neben der Anlage verfügbar.<br>
-        Die Einfahrt befindet sich nach dem Kreisverkehr etwas weiter unten.<br>
-        Insgesamt gibt es vier Zugänge zur Anlage – jeweils zwei oben und zwei unten.
-    </em></p>
-</section>
+    <section>
+        <h2 data-i18n="wifi_title">📶 WLAN</h2>
+        <div data-i18n="wifi_step1"><strong>1. Schritt: Mit WLAN verbinden</strong></div>
+        <div data-i18n="wifi_name"><strong>Name:</strong> Sonne statt Stream</div>
+        <div data-i18n="wifi_pass"><strong>Passwort:</strong> 64084459</div>
+        <div style="margin-top:1rem;" data-i18n="wifi_step2"><strong>2. Schritt: Login</strong></div>
+        <div data-i18n="wifi_user"><strong>Benutzername:</strong> A25</div>
+        <div data-i18n="wifi_userpass"><strong>Passwort:</strong> RELT4ADG71</div>
+        <div style="margin-top:1rem;" data-i18n="wifi_note"><em>Hinweis: Das WLAN ist mit einer 2-Faktor-Authentifizierung gesichert. Zuerst wird das Standardpasswort benötigt, anschließend erfolgt die Anmeldung mit Benutzername und Passwort. Es kann sein, dass man sich nach einiger Zeit erneut anmelden muss (Schritt 2).</em></div>
+    </section>
 
-<section>
-    <h2 data-i18n="wifi_title">📶 WLAN</h2>
-    <div data-i18n="wifi_step1"><strong>1. Schritt: Mit WLAN verbinden</strong></div>
-    <div data-i18n="wifi_name"><strong>Name:</strong> Sonne statt Stream</div>
-    <div data-i18n="wifi_pass"><strong>Passwort:</strong> 64084459</div>
-    <div style="margin-top:1rem;" data-i18n="wifi_step2"><strong>2. Schritt: Login</strong></div>
-    <div data-i18n="wifi_user"><strong>Benutzername:</strong> A25</div>
-    <div data-i18n="wifi_userpass"><strong>Passwort:</strong> RELT4ADG71</div>
-    <div style="margin-top:1rem;" data-i18n="wifi_note"><em>
-        Hinweis: Das WLAN ist mit einer 2-Faktor-Authentifizierung gesichert. Zuerst wird das Standardpasswort benötigt, anschließend erfolgt die Anmeldung mit Benutzername und Passwort. Es kann sein, dass man sich nach einiger Zeit erneut anmelden muss (Schritt 2).
-    </em></div>
-</section>
+    <section>
+        <h2 data-i18n="key_title">🔑 Schlüssel</h2>
+        <p data-i18n="key_text"><strong>Der Schlüssel wird vor Ankunft übergeben.</strong></p>
+    </section>
 
-<section>
-    <h2 data-i18n="key_title">🔑 Schlüssel</h2>
-    <p data-i18n="key_text"><strong>Der Schlüssel wird vor Ankunft übergeben.</strong></p>
-</section>
+    <section>
+        <h2 data-i18n="trash_title">🗑️ Mülltrennung</h2>
+        <p data-i18n="trash_text">Im Gang stehen Mülltonnen (alles gemischt).<br>Außengänge: Glas, Plastik und Papier.</p>
+    </section>
 
-<section>
-    <h2 data-i18n="trash_title">🗑️ Mülltrennung</h2>
-    <p data-i18n="trash_text">Im Gang stehen Mülltonnen (alles gemischt).<br>Außengänge: Glas, Plastik und Papier.</p>
-</section>
+    <section>
+        <h2 data-i18n="bugs_title">🐜 Insekten</h2>
+        <ul>
+            <li data-i18n="bugs_1">Um Insektenbefall zu vermeiden, bitte Essen stets verpackt aufbewahren und nicht offen stehen lassen.</li>
+            <li data-i18n="bugs_2">Kakerlaken können nicht zu 100 % ausgeschlossen werden, treten aber nur selten auf.</li>
+            <li data-i18n="bugs_3">Bug-Spray und Fallen sind vorhanden.</li>
+        </ul>
+    </section>
 
-<section>
-    <h2 data-i18n="bugs_title">🐜 Insekten</h2>
-    <ul>
-        <li data-i18n="bugs_1">Um Insektenbefall zu vermeiden, bitte Essen stets verpackt aufbewahren und nicht offen stehen lassen.</li>
-        <li data-i18n="bugs_2">Kakerlaken können nicht zu 100 % ausgeschlossen werden, treten aber nur selten auf.</li>
-        <li data-i18n="bugs_3">Bug-Spray und Fallen sind vorhanden.</li>
-    </ul>
-</section>
+    <section>
+        <h2 data-i18n="pool_title">🏊 Pool</h2>
+        <p data-i18n="pool_text">Der Pool und die Liegen können genutzt werden. Bitte den Schlüssel immer mitnehmen.</p>
+    </section>
 
-<section>
-    <h2 data-i18n="pool_title">🏊 Pool</h2>
-    <p data-i18n="pool_text">Der Pool und die Liegen können genutzt werden. Bitte den Schlüssel immer mitnehmen.</p>
-</section>
+    <section>
+        <h2 data-i18n="fan_title">💡 Ventilator & Licht</h2>
+        <p data-i18n="fan_text">Die Deckenventilatoren haben eine eigene Fernbedienung. Wichtig: Der Wandschalter muss auf „an“ stehen, damit Strom fließt.</p>
+    </section>
 
-<section>
-    <h2 data-i18n="fan_title">💡 Ventilator & Licht</h2>
-    <p data-i18n="fan_text">Die Deckenventilatoren haben eine eigene Fernbedienung. Wichtig: Der Wandschalter muss auf „an“ stehen, damit Strom fließt.</p>
-</section>
+    <section>
+        <h2 data-i18n="leave_title">🧹 Vor Abreise bitte beachten</h2>
+        <ul>
+            <li data-i18n="leave_1">Am Ende saugen und ggf. durchwischen.</li>
+            <li data-i18n="leave_2">Toilette bitte reinigen.</li>
+            <li data-i18n="leave_3">Bettwäsche abziehen und in den Wäschekorb legen.</li>
+            <li data-i18n="leave_4">Fenster, Balkontüren etc. schließen.</li>
+            <li data-i18n="leave_5">Den großen Schirm in den Wintergarten stellen (Druckknopf-Arretierung in der Mitte).</li>
+            <li data-i18n="leave_6">Alle persönlichen Gegenstände einsammeln.</li>
+            <li data-i18n="leave_7">Elektrische Geräte ausschalten.</li>
+        </ul>
+    </section>
 
-<section>
-    <h2 data-i18n="leave_title">🧹 Vor Abreise bitte beachten</h2>
-    <ul>
-        <li data-i18n="leave_1">Am Ende saugen und ggf. durchwischen.</li>
-        <li data-i18n="leave_2">Toilette bitte reinigen.</li>
-        <li data-i18n="leave_3">Bettwäsche abziehen und in den Wäschekorb legen.</li>
-        <li data-i18n="leave_4">Fenster, Balkontüren etc. schließen.</li>
-        <li data-i18n="leave_5">Den großen Schirm in den Wintergarten stellen (Druckknopf-Arretierung in der Mitte).</li>
-        <li data-i18n="leave_6">Alle persönlichen Gegenstände einsammeln.</li>
-        <li data-i18n="leave_7">Elektrische Geräte ausschalten.</li>
-    </ul>
-</section>
-
-<section>
-    <h2 data-i18n="contact_title">📞 Wichtige Kontakte</h2>
-    <p data-i18n="contact_emergency"><strong>Notruf:</strong> 112</p>
-    <p data-i18n="contact_list">091 – Policía Nacional<br>062 – Guardia Civil<br>061 – Medizinische Notfallhilfe</p>
-</section>
+    <section>
+        <h2 data-i18n="contact_title">📞 Wichtige Kontakte</h2>
+        <p data-i18n="contact_emergency"><strong>Notruf:</strong> 112</p>
+        <p data-i18n="contact_list">091 – Policía Nacional<br>062 – Guardia Civil<br>061 – Medizinische Notfallhilfe</p>
+    </section>
 
 </main>
 
@@ -126,17 +108,138 @@
 </footer>
 
 <script>
+// Übersetzungen komplett
 const translations = {
-    "de": { /* wie gehabt, alle deutschen Texte */ },
-    "en": { /* alle englischen Texte */ },
-    "pl": { /* alle polnischen Texte */ }
+    de: {
+        title: "Willkommen im Solymar Calma A25",
+        subtitle: "Dein Zuhause unter der Sonne Fuerteventuras 🌴☀️",
+        address_title: "📍 Adresse & Anfahrt",
+        address_text: "SolymarCalma HRE<br>C. Puerto de la Cebada, 1<br>35627 Costa Calma, Las Palmas, Spanien",
+        address_maps: "📍 Google Maps öffnen",
+        address_note: "Hinweis: Parkplätze sind auf der Straße oder links neben der Anlage verfügbar. Die Einfahrt befindet sich nach dem Kreisverkehr etwas weiter unten. Insgesamt gibt es vier Zugänge zur Anlage – jeweils zwei oben und zwei unten.",
+        wifi_title: "📶 WLAN",
+        wifi_step1: "1. Schritt: Mit WLAN verbinden",
+        wifi_name: "Name:",
+        wifi_pass: "Passwort:",
+        wifi_step2: "2. Schritt: Login",
+        wifi_user: "Benutzername:",
+        wifi_userpass: "Passwort:",
+        wifi_note: "Hinweis: Das WLAN ist mit einer 2-Faktor-Authentifizierung gesichert. Zuerst wird das Standardpasswort benötigt, anschließend erfolgt die Anmeldung mit Benutzername und Passwort.",
+        key_title: "🔑 Schlüssel",
+        key_text: "Der Schlüssel wird vor Ankunft übergeben.",
+        trash_title: "🗑️ Mülltrennung",
+        trash_text: "Im Gang stehen Mülltonnen (alles gemischt). Außengänge: Glas, Plastik und Papier.",
+        bugs_title: "🐜 Insekten",
+        bugs_1: "Um Insektenbefall zu vermeiden, bitte Essen stets verpackt aufbewahren und nicht offen stehen lassen.",
+        bugs_2: "Kakerlaken können nicht zu 100 % ausgeschlossen werden, treten aber nur selten auf.",
+        bugs_3: "Bug-Spray und Fallen sind vorhanden.",
+        pool_title: "🏊 Pool",
+        pool_text: "Der Pool und die Liegen können genutzt werden. Bitte den Schlüssel immer mitnehmen.",
+        fan_title: "💡 Ventilator & Licht",
+        fan_text: "Die Deckenventilatoren haben eine eigene Fernbedienung. Wichtig: Der Wandschalter muss auf „an“ stehen.",
+        leave_title: "🧹 Vor Abreise bitte beachten",
+        leave_1: "Am Ende saugen und ggf. durchwischen.",
+        leave_2: "Toilette bitte reinigen.",
+        leave_3: "Bettwäsche abziehen und in den Wäschekorb legen.",
+        leave_4: "Fenster, Balkontüren etc. schließen.",
+        leave_5: "Den großen Schirm in den Wintergarten stellen (Druckknopf-Arretierung in der Mitte)",
+        leave_6: "Alle persönlichen Gegenstände einsammeln.",
+        leave_7: "Elektrische Geräte ausschalten.",
+        contact_title: "📞 Wichtige Kontakte",
+        contact_emergency: "Notruf:",
+        contact_list: "091 – Policía Nacional<br>062 – Guardia Civil<br>061 – Medizinische Notfallhilfe",
+        footer: "Viel Spaß auf Fuerteventura & einen erholsamen Aufenthalt!"
+    },
+    en: {
+        title: "Welcome to Solymar Calma A25",
+        subtitle: "Your home under the Fuerteventura sun 🌴☀️",
+        address_title: "📍 Address & Directions",
+        address_text: "SolymarCalma HRE<br>C. Puerto de la Cebada, 1<br>35627 Costa Calma, Las Palmas, Spain",
+        address_maps: "📍 Open Google Maps",
+        address_note: "Note: Parking is available on the street or next to the complex. The entrance is slightly downhill after the roundabout.",
+        wifi_title: "📶 WiFi",
+        wifi_step1: "1st step: Connect to WiFi",
+        wifi_name: "Name:",
+        wifi_pass: "Password:",
+        wifi_step2: "2nd step: Login",
+        wifi_user: "Username:",
+        wifi_userpass: "Password:",
+        wifi_note: "Note: WiFi uses two-factor authentication. First the standard password, then login with username and password.",
+        key_title: "🔑 Key",
+        key_text: "The key will be handed over before arrival.",
+        trash_title: "🗑️ Waste separation",
+        trash_text: "Inside corridor: mixed waste. Outside: glass, plastic, paper.",
+        bugs_title: "🐜 Insects",
+        bugs_1: "Please store food sealed to avoid insects.",
+        bugs_2: "Cockroaches cannot be completely ruled out, but are rare.",
+        bugs_3: "Bug spray and traps are available in the apartment.",
+        pool_title: "🏊 Pool",
+        pool_text: "The pool and sunbeds may be used. Please always bring the key.",
+        fan_title: "💡 Fan & Light",
+        fan_text: "The ceiling fans have a remote control. The wall switch must be ON.",
+        leave_title: "🧹 Before departure",
+        leave_1: "Vacuum and mop if needed.",
+        leave_2: "Clean the toilet.",
+        leave_3: "Remove bed linen and put it into the basket.",
+        leave_4: "Close windows and doors.",
+        leave_5: "Store the umbrella in the winter garden.",
+        leave_6: "Collect all personal belongings.",
+        leave_7: "Switch off all electrical devices.",
+        contact_title: "📞 Important contacts",
+        contact_emergency: "Emergency call:",
+        contact_list: "091 – Policía Nacional<br>062 – Guardia Civil<br>061 – Medical emergency",
+        footer: "Enjoy your stay on Fuerteventura!"
+    },
+    pl: {
+        title: "Witamy w Solymar Calma A25",
+        subtitle: "Twój dom pod słońcem Fuerteventury 🌴☀️",
+        address_title: "📍 Adres i dojazd",
+        address_text: "SolymarCalma HRE<br>C. Puerto de la Cebada, 1<br>35627 Costa Calma, Las Palmas, Hiszpania",
+        address_maps: "📍 Otwórz Google Maps",
+        address_note: "Parkowanie możliwe na ulicy lub na polu obok obiektu. Wejście znajduje się nieco niżej za rondem.",
+        wifi_title: "📶 WiFi",
+        wifi_step1: "Krok 1: Połącz się z WiFi",
+        wifi_name: "Nazwa:",
+        wifi_pass: "Hasło:",
+        wifi_step2: "Krok 2: Login",
+        wifi_user: "Nazwa użytkownika:",
+        wifi_userpass: "Hasło:",
+        wifi_note: "Uwaga: WiFi ma podwójną autoryzację — najpierw hasło standardowe, potem login.",
+        key_title: "🔑 Klucz",
+        key_text: "Klucz zostanie przekazany przed przyjazdem.",
+        trash_title: "🗑️ Segregacja śmieci",
+        trash_text: "Korytarz: odpady zmieszane. Zewnętrzne kosze: szkło, plastik, papier.",
+        bugs_title: "🐜 Owady",
+        bugs_1: "Przechowuj jedzenie szczelnie zamknięte.",
+        bugs_2: "Karaluchy mogą się pojawić, ale rzadko.",
+        bugs_3: "W mieszkaniu są pułapki i spray.",
+        pool_title: "🏊 Basen",
+        pool_text: "Basen i leżaki są do dyspozycji. Zabieraj zawsze klucz.",
+        fan_title: "💡 Wentylator i światło",
+        fan_text: "Wentylatory mają pilot. Włącznik ścienny musi być ustawiony na ON.",
+        leave_title: "🧹 Przed wyjazdem",
+        leave_1: "Odkurz i w razie potrzeby umyj podłogę.",
+        leave_2: "Wyczyść toaletę.",
+        leave_3: "Zdejmij pościel i włóż do kosza.",
+        leave_4: "Pozamykaj okna i drzwi.",
+        leave_5: "Schowaj parasol do ogrodu zimowego.",
+        leave_6: "Zabierz swoje rzeczy.",
+        leave_7: "Wyłącz wszystkie urządzenia elektryczne.",
+        contact_title: "📞 Ważne numery",
+        contact_emergency: "Telefon alarmowy:",
+        contact_list: "091 – Policja<br>062 – Guardia Civil<br>061 – Pomoc medyczna",
+        footer: "Miłego pobytu na Fuerteventurze!"
+    }
 };
 
-function setLang(lang) {
-    const langObj = translations[lang] || {};
-    document.querySelectorAll("[data-i18n]").forEach(el => {
+// Sprache setzen und HTML korrekt ersetzen
+function setLang(lang){
+    const langObj = translations[lang];
+    if(!langObj) return;
+
+    document.querySelectorAll("[data-i18n]").forEach(el=>{
         const key = el.getAttribute("data-i18n");
-        if (langObj[key]) {
+        if(langObj[key]){
             el.innerHTML = langObj[key];
         }
     });
